@@ -19,19 +19,31 @@ export const ThirdPage = () => {
   return (
     <ThirdPagePart>
       <Container>
-        <h2>Ծրագիր</h2>
+        <h2>Ժամանակացույց</h2>
         <ThirdPagePartContext>
           <ThirdPageBlock
             className="uniqueone"
             ImageSrc={SvgRing}
-            number={"12:00"}
+            number={"10:00"}
+            bigText="ՓԵՍԱՅԻ ՏՈՒՆ"
+            smallText="Աշտարակ"
+            mapLink="https://maps.google.com/?q=40.269913,44.345142"
+          />
+
+          <ThirdPageBlock
+            uniqueMargin={120}
+            className="uniqueone"
+            ImageSrc={SvgRing}
+            number={"11:30"}
             bigText="ՀԱՐՍԻ ՏՈՒՆ"
+            smallText="Գեղանիստ"
+            mapLink="https://maps.google.com/?q=40.146339,44.432625"
           />
           <ThirdPageBlock
             ImageSrc={SvgChurch}
-            number={"15:45"}
+            number={"14:00"}
             bigText="ՊՍԱԿԱԴՐՈՒԹՅՈՒՆ"
-            smallText="Հովհաննավանք եկեղեցի"
+            smallText="Սուրբ Մարիամ Աստվածածին եկեղեցի"
           />
           <ThirdPageBlock
             className="secondBlock"
@@ -39,19 +51,19 @@ export const ThirdPage = () => {
             ImageSrc={SvgCouple}
             number={"17:00"}
             bigText="ՀԱՐՍԱՆՅԱՑ ՀԱՆԴԻՍՈՒԹՅՈՒՆ"
-            smallText="Աշտարակ Հոլ ռեստորան"
+            smallText="Dainty Hall ռեստորան"
           />
         </ThirdPagePartContext>
         <ForthPagePartContext>
           <ForthPageBlock
             ImageSrc={Church}
-            bigText={"Հովհաննավանք եկեղեցի"}
-            mapSrc={"https://yandex.com/maps/org/224495205780?"}
+            bigText={"Սուրբ Մարիամ Աստվածածին եկեղեցի"}
+            mapSrc={"https://yandex.com/maps/-/CPTGbOle"}
           />
           <ForthPageBlock
             ImageSrc={Restaurant}
-            bigText={"Աշտարակ Հոլ ռեստորան"}
-            mapSrc={"https://yandex.com/maps/org/100881804174?"}
+            bigText={"Dainty Hall ռեստորան"}
+            mapSrc={"https://yandex.com/maps/-/CPTGb07j"}
           />
         </ForthPagePartContext>
       </Container>
@@ -61,12 +73,12 @@ export const ThirdPage = () => {
           <h3 className="dzev">Սիրով սպասում ենք</h3>
           <hr />
           <h3 className="dzev">Պահպանիր Օրը</h3>
-          <h3>Հուլիս</h3>
+          <h3>Օգոստոս</h3>
         </ThirdPagePartMini>
         <ThirdPagePartCalendar>
           {[...Array(35)].map((_, i) =>
-            i > 1 && i <= 32 ? (
-              <div className={i - 1 == 4 ? "special" : ""}>{i - 1}</div>
+            i > 4 && i <= 36 ? (
+              <div className={i - 4 == 8 ? "special" : ""}>{i - 4}</div>
             ) : (
               <div></div>
             ),

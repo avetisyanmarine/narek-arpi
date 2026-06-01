@@ -33,7 +33,7 @@ const GlobalStyle = createGlobalStyle`
     font-weight: 100;
   }
   h1 {
-    font-size: 80px;
+    font-size: 51px;
     font-family: ArmAllegrou;
     color: #fefefe;
     font-weight: 400;

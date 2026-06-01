@@ -9,6 +9,9 @@ export const MusicPage = ({ isPlaying }) => {
   const [manualPlay, setManualPlay] = useState(false);
 
   useEffect(() => {
+    if (audioRef.current.currentTime === 0) {
+      audioRef.current.currentTime = 46; 
+    }
     if (isPlaying && audioRef.current) {
       audioRef.current
         .play()
@@ -28,7 +31,7 @@ export const MusicPage = ({ isPlaying }) => {
   return (
     <MusicPagePart>
       <div>
-        <h4 className="text-[16px]">Mon Amour</h4>
+        <h4 className="text-[16px]">Свадебная</h4>
       </div>
       <div onClick={handleClick}>
         <img src={manualPlay ? Pause : Play} alt="music-control" />
