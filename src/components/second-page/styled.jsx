@@ -5,7 +5,6 @@ const SecondPagePart = styled.div`
     text-align: center;
   }
   h2 {
-    color: #3d3a3a;
     font-size: 48px;
     font-weight: 600;
     font-family: ArmAllegrou;

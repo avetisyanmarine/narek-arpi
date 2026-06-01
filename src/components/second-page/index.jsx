@@ -61,7 +61,7 @@ export const SecondPage = () => {
           </h2>
         </div>
         <div style={{ margin: "30px 0" }} className="w-full">
-          <h2 className="uniqueH2">Միջոցառմանը Մնաց</h2>
+          <h2 className="uniqueH2" style={{fontSize: "29px"}}>Միջոցառմանը Մնաց</h2>
           <GridDiv>
             <Flexible>
               <h2>{formatNumber(timeLeft.days)}</h2>

@@ -196,7 +196,7 @@ const OptionButton = styled.button`
   `
       : `
     background-color: #f3f4f6;
-    color: #374151;
+    // color: #374151;
     border: 2px solid #d1d5db;
 
     &:hover {
