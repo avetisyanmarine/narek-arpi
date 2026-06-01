@@ -9,9 +9,7 @@ export const MusicPage = ({ isPlaying }) => {
   const [manualPlay, setManualPlay] = useState(false);
 
   useEffect(() => {
-    if (audioRef.current.currentTime === 0) {
       audioRef.current.currentTime = 46; 
-    }
     if (isPlaying && audioRef.current) {
       audioRef.current
         .play()
